@@ -57,7 +57,7 @@ def parse_train_args():
     parser.add_argument("--tasks", nargs='+', default=["ag_news_csv"])
     parser.add_argument("--warmup_steps", type=int, default=0)
     parser.add_argument("--weight_decay", type=float, default=0)
-    parser.add_argument("--seed", type=int, default=123)
+    parser.add_argument("--seed", type=int, default=1)
     parser.add_argument("--highway_pen", type=float, default=0.5)
     parser.add_argument("--mem_capacity", type=float, default=0.2)
     parser.add_argument("--only_mem", action="store_true")

@@ -151,7 +151,7 @@ def train_task(args, model, train_dataset, train_bert, use_highway, highway_pen,
 
             if len(perc_entropy) > 0:
                 perc_entropy = torch.stack(perc_entropy)
-                logger.info(perc_entropy.mean(dim=0))
+                # logger.info(perc_entropy.mean(dim=0))
                 final_perct_task.append(perc_entropy.mean(dim=0))
                 perc_entropy = []
         torch.cuda.empty_cache() # this saves memory but slows down the process
